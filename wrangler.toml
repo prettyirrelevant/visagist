@@ -1,0 +1,22 @@
+name = "visagist"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "dist"
+
+[env.production]
+account_id = ""
+project_name = "visagist"
+
+[env.production.vars]
+NODE_ENV = "production"
+
+[[env.production.routes]]
+pattern = "visagist.pages.dev"
+custom_domain = true
+
+[build]
+command = "pnpm build"
+cwd = "."
+watch_dir = "src"
+
+[build.upload]
+format = "modules"
