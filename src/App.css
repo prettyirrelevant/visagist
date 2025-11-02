@@ -674,12 +674,15 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border: var(--border-thin) solid var(--pure-black);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
 }
 
-.confidence {
-  background: var(--primary-green);
-  color: var(--pure-white);
-  box-shadow: var(--shadow-small) var(--pure-black);
+.stat-badge svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 .timing {

@@ -308,11 +308,8 @@ const App: Component = () => {
                   <div class="filename">{result.filename}</div>
                   <Show when={result.status === 'completed'}>
                     <div class="stats">
-                      <span class="stat-badge confidence">
-                        {Math.round(result.confidence * 100)}% match
-                      </span>
                       <span class="stat-badge timing">
-                        {result.inferenceTimeMs.toFixed(0)}ms
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock-check-icon lucide-clock-check"><path d="M12 6v6l4 2" /><path d="M22 12a10 10 0 1 0-11 9.95" /><path d="m22 16-5.5 5.5L14 19" /></svg> {result.inferenceTimeMs.toFixed(0)}ms
                       </span>
                     </div>
                   </Show>
