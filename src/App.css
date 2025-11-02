@@ -803,40 +803,6 @@ body {
   }
 }
 
-/* dark mode support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --off-white: #1a1a1a;
-    --pure-white: #242424;
-    --cool-gray: #333333;
-    --pale-green: rgba(0, 208, 132, 0.1);
-    --pale-orange: rgba(255, 107, 53, 0.1);
-  }
-
-  body {
-    background: var(--off-white);
-    color: var(--cool-gray);
-  }
-
-  .hero {
-    background: var(--pure-white);
-    border-bottom-color: var(--warm-gray);
-  }
-
-  .drop-target,
-  .result-card,
-  .accuracy-meter {
-    background: var(--pure-white);
-    border-color: var(--warm-gray);
-    box-shadow: var(--shadow-large) rgba(0, 0, 0, 0.5);
-  }
-
-  .subtitle,
-  .filename {
-    color: var(--cool-gray);
-  }
-}
-
 /* focus states for accessibility */
 *:focus-visible {
   outline: var(--border-medium) dashed var(--primary-orange);
